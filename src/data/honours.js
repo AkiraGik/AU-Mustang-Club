@@ -5,7 +5,7 @@ export const honours = [
   { season: "2024/25", competition: "12th International University Cup", result: "Champions" },
   { season: "2023/24", competition: "11th International University Cup", result: "Runners-up" },
   { season: "2021/22", competition: "09th International University Cup", result: "Champions" },
-  { season: "2018/19", competition: "08th International Unviersity Cuo", result: "Champions" },
+  { season: "2018/19", competition: "08th International University Cup", result: "Champions" },
 ];
 
 export const recentResults = [
