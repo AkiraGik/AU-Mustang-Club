@@ -57,10 +57,6 @@ export default function Home() {
       </section>
 
       <section className="home-links">
-        <Link to="/players" className="home-link-card">
-          <h3>All-Time Players</h3>
-          <p>Every player who has ever pulled on the Mustangs shirt.</p>
-        </Link>
         <Link to="/squads" className="home-link-card">
           <h3>Squads &amp; Coaches</h3>
           <p>Photos of the squad and coaching staff, season by season.</p>

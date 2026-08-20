@@ -6,7 +6,6 @@ import { club } from "../data/club";
 const links = [
   { to: "/", label: "Home", end: true },
   { to: "/squads", label: "Squads & Coaches" },
-  { to: "/players", label: "All-Time Players" },
   { to: "/gallery", label: "Gallery" },
   { to: "/honours", label: "Honours & Fixtures" },
   { to: "/contact", label: "Contact" },

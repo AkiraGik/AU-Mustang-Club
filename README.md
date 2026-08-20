@@ -4,7 +4,6 @@ Club website built with React + Vite. Five pages, all reachable from the nav bar
 
 - **Home** — quick overview, next fixture, latest result
 - **Squads & Coaches** (`/squads`) — season-by-season player photos and coaching staff
-- **All-Time Players** (`/players`) — every player who has ever played for the club, searchable
 - **Gallery** (`/gallery`) — photos, filterable by category
 - **Honours & Fixtures** (`/honours`) — trophies, recent results, upcoming matches, and the season roadmap
 - **Contact** (`/contact`) — club details and a message form
@@ -31,7 +30,6 @@ This outputs static files to `dist/`, which can be hosted anywhere (Netlify, Ver
 Everything shown on the site — players, coaches, seasons, gallery captions, honours, fixtures, the roadmap, and club/contact info — lives in plain JS files in `src/data/`:
 
 - `club.js` — club name, tagline, location, email, social links
-- `players.js` — the all-time roster
 - `seasons.js` — squads and coaching staff per season
 - `gallery.js` — gallery photo entries
 - `honours.js` — trophies, results, fixtures, and the yearly roadmap
