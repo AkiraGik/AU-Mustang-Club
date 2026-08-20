@@ -1,0 +1,76 @@
+:root {
+  --red: #c8102e;
+  --red-dark: #8f1f2b;
+  --navy: #14202b;
+  --navy-light: #1f3a52;
+  --gold: #f2b705;
+
+  --bg: #f7f5f2;
+  --surface: #ffffff;
+  --text: #1c2126;
+  --text-muted: #5a6470;
+  --border: #e4e0d8;
+  --shadow: 0 8px 24px rgba(20, 32, 43, 0.08);
+
+  --sans: "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+
+  color-scheme: light dark;
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1319;
+    --surface: #161d25;
+    --text: #eef1f4;
+    --text-muted: #99a3ad;
+    --border: #263140;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  color: var(--text);
+  margin: 0 0 0.4em;
+}
+
+p {
+  margin: 0 0 1em;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
