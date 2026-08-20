@@ -45,6 +45,13 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="home-about">
+        <h2>Our Story</h2>
+        {club.history.map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
+      </section>
+
       <section className="home-links">
         <Link to="/squads" className="home-link-card">
           <h3>Squads &amp; Coaches</h3>
@@ -57,10 +64,6 @@ export default function Home() {
         <Link to="/honours" className="home-link-card">
           <h3>Honours &amp; Results</h3>
           <p>Trophies won and recent match results.</p>
-        </Link>
-        <Link to="/contact" className="home-link-card">
-          <h3>Contact</h3>
-          <p>Get in touch or find out how to join the club.</p>
         </Link>
       </section>
     </div>

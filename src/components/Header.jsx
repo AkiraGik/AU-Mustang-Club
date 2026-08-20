@@ -8,7 +8,6 @@ const links = [
   { to: "/squads", label: "Squads & Coaches" },
   { to: "/gallery", label: "Gallery" },
   { to: "/honours", label: "Honours & Results" },
-  { to: "/contact", label: "Contact" },
 ];
 
 export default function Header() {

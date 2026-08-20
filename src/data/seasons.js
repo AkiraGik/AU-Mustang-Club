@@ -6,9 +6,7 @@ export const seasons = [
     year: "2025/26",
     current: true,
     coaches: [
-      { name: "Add Coach Name", role: "Head Coach" },
-      { name: "Add Coach Name", role: "Assistant Coach" },
-      { name: "Add Coach Name", role: "Goalkeeping Coach" },
+      { name: "Add Coach Nameex", role: "Head Coach" },
     ],
     players: [
       { name: "Add Player Name", number: 1, position: "Goalkeeper" },
