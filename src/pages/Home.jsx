@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import Crest from "../components/Crest";
 import { club } from "../data/club";
-import { honours, recentResults, upcomingFixtures } from "../data/honours";
+import { honours, recentResults } from "../data/honours";
 import { seasons } from "../data/seasons";
 
 export default function Home() {
   const currentSeason = seasons.find((s) => s.current) ?? seasons[0];
   const lastResult = recentResults[0];
-  const nextFixture = upcomingFixtures[0];
 
   return (
     <div className="page home-page">
@@ -23,7 +22,7 @@ export default function Home() {
             Meet the Squad
           </Link>
           <Link to="/honours" className="btn btn-outline">
-            Fixtures &amp; Results
+            Honours &amp; Results
           </Link>
         </div>
       </section>
@@ -44,16 +43,6 @@ export default function Home() {
           </div>
           <div className="stat-sub">vs {lastResult.opponent}</div>
         </div>
-        <div className="stat-card">
-          <div className="stat-label">Next Fixture</div>
-          <div className="stat-value">{nextFixture.opponent}</div>
-          <div className="stat-sub">
-            {new Date(nextFixture.date).toLocaleDateString(undefined, {
-              day: "numeric",
-              month: "short",
-            })}
-          </div>
-        </div>
       </section>
 
       <section className="home-links">
@@ -66,8 +55,8 @@ export default function Home() {
           <p>Match day, training and team moments.</p>
         </Link>
         <Link to="/honours" className="home-link-card">
-          <h3>Honours &amp; Fixtures</h3>
-          <p>Trophies, results, upcoming matches and the season roadmap.</p>
+          <h3>Honours &amp; Results</h3>
+          <p>Trophies won and recent match results.</p>
         </Link>
         <Link to="/contact" className="home-link-card">
           <h3>Contact</h3>

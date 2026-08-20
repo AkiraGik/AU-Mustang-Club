@@ -7,7 +7,7 @@ const links = [
   { to: "/", label: "Home", end: true },
   { to: "/squads", label: "Squads & Coaches" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/honours", label: "Honours & Fixtures" },
+  { to: "/honours", label: "Honours & Results" },
   { to: "/contact", label: "Contact" },
 ];
 

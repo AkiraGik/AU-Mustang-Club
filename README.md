@@ -2,10 +2,10 @@
 
 Club website built with React + Vite. Five pages, all reachable from the nav bar:
 
-- **Home** — quick overview, next fixture, latest result
+- **Home** — quick overview and latest result
 - **Squads & Coaches** (`/squads`) — season-by-season player photos and coaching staff
 - **Gallery** (`/gallery`) — photos, filterable by category
-- **Honours & Fixtures** (`/honours`) — trophies, recent results, upcoming matches, and the season roadmap
+- **Honours & Results** (`/honours`) — trophies won and recent match results
 - **Contact** (`/contact`) — club details and a message form
 
 ## Running it
@@ -27,12 +27,12 @@ This outputs static files to `dist/`, which can be hosted anywhere (Netlify, Ver
 
 ## Editing content
 
-Everything shown on the site — players, coaches, seasons, gallery captions, honours, fixtures, the roadmap, and club/contact info — lives in plain JS files in `src/data/`:
+Everything shown on the site — coaches, seasons, gallery captions, honours, results, and club/contact info — lives in plain JS files in `src/data/`:
 
 - `club.js` — club name, tagline, location, email, social links
 - `seasons.js` — squads and coaching staff per season
 - `gallery.js` — gallery photo entries
-- `honours.js` — trophies, results, fixtures, and the yearly roadmap
+- `honours.js` — trophies and recent results
 
 Edit those files directly — no need to touch any component code.
 

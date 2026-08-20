@@ -7,7 +7,7 @@ export const club = {
   tagline: "One Herd. One Goal.",
   founded: "2008",
   location: "Assumption University, Bangkok, Thailand",
-  email: "Add club email",
+  email: "aufootballclub2018@gmail.com",
   social: {
     facebook: "https://www.facebook.com/AssumptionUniversityFootballclub",
     instagram: "https://www.instagram.com/aufootballclub/",
