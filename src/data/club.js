@@ -5,7 +5,7 @@ export const club = {
   thaiName: "ชมรมฟุตบอล มหาวิทยาลัยอัสสัมชัญ",
   university: "Assumption University",
   tagline: "One Herd. One Goal.",
-  founded: "Add founding year",
+  founded: "2008",
   location: "Assumption University, Bangkok, Thailand",
   email: "Add club email",
   social: {

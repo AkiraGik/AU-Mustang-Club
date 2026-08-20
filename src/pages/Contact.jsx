@@ -22,6 +22,10 @@ export default function Contact() {
               <dd>{club.name}</dd>
             </div>
             <div>
+              <dt>Founded</dt>
+              <dd>{club.founded}</dd>
+            </div>
+            <div>
               <dt>Location</dt>
               <dd>{club.location}</dd>
             </div>
