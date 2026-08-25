@@ -1,3 +1,4 @@
+import Reveal from "../components/Reveal";
 import { honours, recentResults } from "../data/honours";
 
 function formatDate(d) {
@@ -16,9 +17,9 @@ export default function Honours() {
         <p>Trophies won and recent results.</p>
       </div>
 
-      <section className="squad-section">
+      <Reveal as="section" className="squad-section">
         <h2 className="squad-section-title">Honours</h2>
-        <div className="honours-list">
+        <div className="honours-list stagger">
           {honours.map((h, i) => (
             <div className="honours-row" key={i}>
               <span className="honours-season">{h.season}</span>
@@ -31,11 +32,11 @@ export default function Honours() {
             </div>
           ))}
         </div>
-      </section>
+      </Reveal>
 
-      <section className="squad-section">
+      <Reveal as="section" className="squad-section">
         <h2 className="squad-section-title">Recent Results</h2>
-        <div className="match-list">
+        <div className="match-list stagger">
           {recentResults.map((m, i) => (
             <div className="match-row" key={i}>
               <span className="match-date">{formatDate(m.date)}</span>
@@ -45,7 +46,7 @@ export default function Honours() {
             </div>
           ))}
         </div>
-      </section>
+      </Reveal>
     </div>
   );
 }

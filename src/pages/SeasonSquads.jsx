@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { seasons } from "../data/seasons";
 import PlayerCard from "../components/PlayerCard";
+import Reveal from "../components/Reveal";
 
 export default function SeasonSquads() {
   const [activeYear, setActiveYear] = useState(
@@ -27,18 +28,20 @@ export default function SeasonSquads() {
         ))}
       </div>
 
-      <section className="squad-section">
-        <h2 className="squad-section-title">Coaching Staff</h2>
-        <div className="coach-grid">
-          {season.coaches.map((c, i) => (
-            <PlayerCard key={i} name={c.name} photo={c.photo} subtitle={c.role} />
-          ))}
-        </div>
-      </section>
+      {season.coaches.length > 0 && (
+        <Reveal as="section" className="squad-section" key={`${season.year}-coaches`}>
+          <h2 className="squad-section-title">Coaching Staff</h2>
+          <div className="coach-grid stagger">
+            {season.coaches.map((c, i) => (
+              <PlayerCard key={i} name={c.name} photo={c.photo} subtitle={c.role} />
+            ))}
+          </div>
+        </Reveal>
+      )}
 
-      <section className="squad-section">
+      <Reveal as="section" className="squad-section" key={`${season.year}-players`}>
         <h2 className="squad-section-title">Players — {season.year}</h2>
-        <div className="player-grid">
+        <div className="player-grid stagger">
           {season.players.map((p, i) => (
             <PlayerCard
               key={i}
@@ -49,7 +52,7 @@ export default function SeasonSquads() {
             />
           ))}
         </div>
-      </section>
+      </Reveal>
     </div>
   );
 }

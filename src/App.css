@@ -635,3 +635,284 @@
   font-size: 12.5px;
   color: #7c8891;
 }
+
+/* ---------- Motion: scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger.reveal-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger > *:nth-child(1) { transition-delay: 0.02s; }
+.stagger > *:nth-child(2) { transition-delay: 0.07s; }
+.stagger > *:nth-child(3) { transition-delay: 0.12s; }
+.stagger > *:nth-child(4) { transition-delay: 0.17s; }
+.stagger > *:nth-child(5) { transition-delay: 0.22s; }
+.stagger > *:nth-child(6) { transition-delay: 0.27s; }
+.stagger > *:nth-child(7) { transition-delay: 0.32s; }
+.stagger > *:nth-child(8) { transition-delay: 0.37s; }
+.stagger > *:nth-child(9) { transition-delay: 0.42s; }
+.stagger > *:nth-child(n + 10) { transition-delay: 0.47s; }
+
+/* ---------- Motion: header ---------- */
+.site-header {
+  transition: box-shadow 0.25s ease;
+}
+
+.site-header-scrolled {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.brand img {
+  transition: transform 0.4s ease;
+}
+
+.brand:hover img {
+  transform: rotate(-10deg) scale(1.08);
+}
+
+.site-nav-link {
+  position: relative;
+}
+
+.site-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 5px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.site-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.site-nav-link.active::after {
+  display: none;
+}
+
+.nav-toggle span {
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-toggle-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---------- Motion: hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  inset: -30% -10% auto -10%;
+  height: 160%;
+  background:
+    radial-gradient(circle at 28% 25%, rgba(242, 183, 5, 0.28), transparent 58%),
+    radial-gradient(circle at 72% 65%, rgba(200, 16, 46, 0.28), transparent 55%);
+  animation: heroDrift 14s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes heroDrift {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(2%, 2%, 0) scale(1.1);
+  }
+}
+
+.hero-crest img {
+  animation: crestFloat 4.5s ease-in-out infinite;
+}
+
+@keyframes crestFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.hero-pop {
+  position: relative;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: heroPop 0.7s ease forwards;
+}
+
+.hero-pop-1 { animation-delay: 0.08s; }
+.hero-pop-2 { animation-delay: 0.16s; }
+.hero-pop-3 { animation-delay: 0.24s; }
+.hero-pop-4 { animation-delay: 0.32s; }
+
+@keyframes heroPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Motion: buttons ---------- */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.btn-primary:hover::after {
+  left: 130%;
+}
+
+/* ---------- Motion: cards & rows ---------- */
+.stat-card,
+.player-card,
+.home-link-card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover,
+.player-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(200, 16, 46, 0.35);
+}
+
+.player-card-photo .avatar {
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover .player-card-photo .avatar {
+  transform: scale(1.06);
+}
+
+.gallery-tile {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.gallery-tile img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-tile:hover img {
+  transform: scale(1.08);
+}
+
+.honours-row,
+.match-row {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.honours-row:hover,
+.match-row:hover {
+  transform: translateX(4px);
+  border-color: rgba(200, 16, 46, 0.3);
+}
+
+.chip,
+.season-tab {
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.chip:hover,
+.season-tab:hover {
+  transform: translateY(-2px);
+}
+
+.badge-active {
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(200, 16, 46, 0.4), transparent);
+  animation: badgeShine 3.2s ease-in-out infinite;
+}
+
+@keyframes badgeShine {
+  0% { left: -60%; }
+  55%, 100% { left: 130%; }
+}
+
+/* ---------- Motion: reduced-motion preference ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

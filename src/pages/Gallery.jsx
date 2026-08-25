@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import Reveal from "../components/Reveal";
 import { galleryItems, galleryCategories } from "../data/gallery";
 
 const PATTERNS = [
@@ -35,7 +36,7 @@ export default function Gallery() {
         ))}
       </div>
 
-      <div className="gallery-grid">
+      <Reveal key={category} className="gallery-grid stagger">
         {filtered.map((item, i) => (
           <figure className="gallery-tile" key={i}>
             {item.src ? (
@@ -51,7 +52,7 @@ export default function Gallery() {
             <figcaption>{item.caption}</figcaption>
           </figure>
         ))}
-      </div>
+      </Reveal>
     </div>
   );
 }
