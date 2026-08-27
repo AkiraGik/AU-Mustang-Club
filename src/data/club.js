@@ -19,6 +19,7 @@ export const club = {
   social: {
     facebook: "https://www.facebook.com/AssumptionUniversityFootballclub",
     instagram: "https://www.instagram.com/aufootballclub/",
+    CSPF: "https://sa.au.edu/our-offices/center-for-sports-and-physical-fitness/"
   },
   hashtags: ["#aufootballclub", "#neefootballna"],
 };

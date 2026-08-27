@@ -20,6 +20,9 @@ export default function Footer() {
           <a href={club.social.instagram} target="_blank" rel="noreferrer">
             Instagram
           </a>
+          <a href={club.social.CSPF} target="_blank" rel="noreferrer">
+            Center for Sports &amp; Physical Fitness
+          </a>
         </div>
 
         <div className="footer-copy">
