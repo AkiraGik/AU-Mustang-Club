@@ -8,7 +8,10 @@ export const club = {
   founded: "2008",
   location: "Assumption University, Bangkok, Thailand",
   history: [
-    "Placeholder — replace with the club's real story: why it was founded in 2008, what it's meant to the players who came through it, and how it's grown since.",
+    "Founded in 2008 by a group of students at Assumption University who simply wanted a team to call their own, AU Mustangs FC started as a handful of friends training on borrowed pitches. What began as pickup games between classes grew, year after year, into a club with real structure, real coaching, and a shirt people were proud to wear.",
+    "“One Herd. One Goal.” isn't just a tagline — it's how the club has always worked. Every year brings a new intake of players and says goodbye to graduating seniors, but the culture carries over: show up, work for each other, represent the university properly. That's what's kept the Mustangs going for close to two decades.",
+    "The trophy cabinet tells part of the story — Champions in the 8th and 9th International University Cups, runners-up in the 11th, and Champions again in the 12th in 2024/25 — but the bigger story is everyone who put in the hours behind those scorelines: the players who never got a trophy but showed up to every training anyway, the coaches who gave their time for free, and the supporters who turned up on match days.",
+    "This site exists to say thank you to all of them — every player, coach, and supporter who's worn the crest since 2008.",
   ],
   social: {
     facebook: "https://www.facebook.com/AssumptionUniversityFootballclub",
