@@ -41,17 +41,21 @@ export default function SeasonSquads() {
 
       <Reveal as="section" className="squad-section" key={`${season.year}-players`}>
         <h2 className="squad-section-title">Players — {season.year}</h2>
-        <div className="player-grid stagger">
-          {season.players.map((p, i) => (
-            <PlayerCard
-              key={i}
-              name={p.name}
-              photo={p.photo}
-              number={p.number}
-              position={p.position}
-            />
-          ))}
-        </div>
+        {season.players.length > 0 ? (
+          <div className="player-grid stagger">
+            {season.players.map((p, i) => (
+              <PlayerCard
+                key={i}
+                name={p.name}
+                photo={p.photo}
+                number={p.number}
+                position={p.position}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="squad-empty">Squad announcement coming soon.</p>
+        )}
       </Reveal>
     </div>
   );

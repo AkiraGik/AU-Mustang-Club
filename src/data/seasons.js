@@ -5,23 +5,8 @@ export const seasons = [
   {
     year: "2025/26",
     current: true,
-    coaches: [
-      { name: "Add Coach Nameex", role: "Head Coach" },
-    ],
-    players: [
-      { name: "Add Player Name", number: 1, position: "Goalkeeper" },
-      { name: "Add Player Name", number: 2, position: "Defender" },
-      { name: "Add Player Name", number: 3, position: "Defender" },
-      { name: "Add Player Name", number: 4, position: "Defender" },
-      { name: "Add Player Name", number: 5, position: "Defender" },
-      { name: "Add Player Name", number: 6, position: "Midfielder" },
-      { name: "Add Player Name", number: 7, position: "Midfielder" },
-      { name: "Add Player Name", number: 8, position: "Midfielder" },
-      { name: "Add Player Name", number: 9, position: "Forward" },
-      { name: "Add Player Name", number: 10, position: "Forward" },
-      { name: "Add Player Name", number: 11, position: "Forward" },
-      { name: "Add Player Name", number: 12, position: "Goalkeeper" },
-    ],
+    coaches: [],
+    players: [],
   },
   {
     // 12th International University Football Cup — Champions.
