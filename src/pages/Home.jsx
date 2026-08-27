@@ -6,6 +6,16 @@ import { club } from "../data/club";
 import { honours, recentResults } from "../data/honours";
 import { seasons } from "../data/seasons";
 
+function renderBold(text) {
+  return text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i}>{part.slice(2, -2)}</strong>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function Home() {
   const currentSeason = seasons.find((s) => s.current) ?? seasons[0];
   const lastResult = recentResults[0];
@@ -53,7 +63,7 @@ export default function Home() {
       <Reveal as="section" className="home-about">
         <h2>Our Story</h2>
         {club.history.map((p, i) => (
-          <p key={i}>{p}</p>
+          <p key={i}>{renderBold(p)}</p>
         ))}
       </Reveal>
 

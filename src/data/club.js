@@ -8,10 +8,13 @@ export const club = {
   founded: "2008",
   location: "Assumption University, Bangkok, Thailand",
   history: [
-    "Founded in 2008 by a group of students at Assumption University who simply wanted a team to call their own, AU Mustangs FC started as a handful of friends training on borrowed pitches. What began as pickup games between classes grew, year after year, into a club with real structure, real coaching, and a shirt people were proud to wear.",
-    "“One Herd. One Goal.” isn't just a tagline — it's how the club has always worked. Every year brings a new intake of players and says goodbye to graduating seniors, but the culture carries over: show up, work for each other, represent the university properly. That's what's kept the Mustangs going for close to two decades.",
-    "The trophy cabinet tells part of the story — Champions in the 8th and 9th International University Cups, runners-up in the 11th, and Champions again in the 12th in 2024/25 — but the bigger story is everyone who put in the hours behind those scorelines: the players who never got a trophy but showed up to every training anyway, the coaches who gave their time for free, and the supporters who turned up on match days.",
-    "This site exists to say thank you to all of them — every player, coach, and supporter who's worn the crest since 2008.",
+    "Every club starts somewhere. Ours started with a simple idea — to bring people together through football.",
+    "What began as a group of players sharing the same passion slowly became something bigger. Training sessions became opportunities to improve, matches became moments to test ourselves, and teammates became a family. We learned that football was never only about what happened on the pitch. It was about the people beside you, the work you put in, and the belief that you could always become better.",
+    "There were difficult days. There were losses, mistakes, tired legs, and moments when giving up would have been easier. But every time we stepped back onto the pitch, we reminded ourselves why we started.",
+    "**\"One Team. One Goal.\"** It represents what we believe in. Every player has a role. Every training session matters. Every match is an opportunity to represent something bigger than yourself.",
+    "Our story is not defined by trophies or a perfect record. It is defined by the players who kept showing up, the teammates who pushed each other forward, the coaches who gave their time, and everyone who believed that this club could become something special.",
+    "We are still writing our story.",
+    "And the best part is that **you can be part of the next chapter.**",
   ],
   social: {
     facebook: "https://www.facebook.com/AssumptionUniversityFootballclub",
